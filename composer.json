@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "HumusDi": "src"
+            "Humus": "src"
         }
     },
     "bin": ["bin/sl_generator"]

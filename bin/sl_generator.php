@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 include 'vendor/autoload.php';
 
-echo "\nreading config files...\n";
+$config = array();
 
 /*
  * Sample implementation of merging 3 given config files
@@ -25,14 +25,10 @@ $config = $alias
 
 */
 
-echo "generating application context...\n";
 $generator = new \Humus\Di\ServiceLocator\Generator($config);
 $generator->setNamespace('Application');
 $generator->setContainerClass('Context');
 $file = $generator->getCodeGenerator();
 $file->setFilename('application/Context.php');
 $file->write();
-
-echo "\ndone\n";
-
 exit();

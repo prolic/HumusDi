@@ -4,7 +4,7 @@
     "description": "Service Locator Generator",
     "keywords": ["dependency injection", "di", "sl", "service locator", "locator", "deprecated"],
     "homepage": "https://github.com/prolic/HumusDi",
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "authors": [
         {
             "name": "Sascha-Oliver Prolic",
